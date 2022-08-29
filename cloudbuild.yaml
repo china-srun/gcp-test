@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/forward-entity-360908/gcp-test:$SHORT_SHA', '.']
+  args: ['build', '-t', 'gcr.io/forward-entity-360908/github.com/china-srun/gcp-test:$SHORT_SHA', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/forward-entity-360908gcp-test/gcp-test:$SHORT_SHA']
+  args: ['push', 'gcr.io/forward-entity-360908/github.com/china-srun/gcp-test:$SHORT_SHA']
